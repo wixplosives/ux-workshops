@@ -33,10 +33,10 @@
           "typescript",
           "wcs-compilers"
         ],
-        "filePath": "@wixc3/component-playground/dist/feature/component-playground.feature",
+        "filePath": "../dist/feature/component-playground.feature",
         "envFilePaths": {
-          "main": "@wixc3/component-playground/dist/feature/component-playground.main.env",
-          "processing": "@wixc3/component-playground/dist/feature/component-playground.processing.env"
+          "main": "../dist/feature/component-playground.main.env",
+          "processing": "../dist/feature/component-playground.processing.env"
         },
         "preloadFilePaths": {},
         "exportedEnvs": [],
@@ -58,7 +58,7 @@
           "firebase-fs-persistency",
           "firebase-auth-ui"
         ],
-        "filePath": "@wixc3/component-playground/dist/fixtures/ux-workshop/ux-workshop.feature",
+        "filePath": "../dist/fixtures/ux-workshop/ux-workshop.feature",
         "envFilePaths": {},
         "preloadFilePaths": {},
         "exportedEnvs": [],
