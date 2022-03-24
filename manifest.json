@@ -707,9 +707,28 @@
               "env": "preview",
               "envType": "iframe",
               "endpointType": "multi",
-              "dependencies": []
+              "dependencies": [
+                {
+                  "env": "window-renderer",
+                  "envType": "iframe",
+                  "endpointType": "multi",
+                  "dependencies": []
+                }
+              ]
             },
-            "flatDependencies": []
+            "flatDependencies": [
+              {
+                "name": "window-renderer",
+                "type": "iframe",
+                "env": {
+                  "env": "window-renderer",
+                  "envType": "iframe",
+                  "endpointType": "multi",
+                  "dependencies": []
+                },
+                "flatDependencies": []
+              }
+            ]
           }
         ],
         "resolvedContexts": {
@@ -1501,10 +1520,23 @@
         "filePath": "@wixc3/code-execution-feature/dist/feature/code-execution.feature",
         "envFilePaths": {
           "main": "@wixc3/code-execution-feature/dist/feature/code-execution.main.env",
-          "processing": "@wixc3/code-execution-feature/dist/feature/code-execution.processing.env"
+          "processing": "@wixc3/code-execution-feature/dist/feature/code-execution.processing.env",
+          "window-renderer": "@wixc3/code-execution-feature/dist/feature/code-execution.window-renderer.env"
         },
         "preloadFilePaths": {},
-        "exportedEnvs": [],
+        "exportedEnvs": [
+          {
+            "name": "window-renderer",
+            "type": "iframe",
+            "env": {
+              "env": "window-renderer",
+              "envType": "iframe",
+              "endpointType": "multi",
+              "dependencies": []
+            },
+            "flatDependencies": []
+          }
+        ],
         "resolvedContexts": {
           "main": "window",
           "processing": "worker"
