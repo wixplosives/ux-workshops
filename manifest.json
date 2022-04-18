@@ -95,9 +95,7 @@
           "editing",
           "simple-ast",
           "gui",
-          "simulation-discovery",
           "demo-discovery",
-          "simulation-to-jsx",
           "typescript-assets"
         ],
         "filePath": "@wixc3/add-panel-feature/dist/feature/add-panel.feature",
@@ -270,7 +268,6 @@
           "project",
           "simple-ast",
           "demo-discovery",
-          "simulation-discovery",
           "job-manager",
           "gui",
           "typescript-assets",
@@ -349,7 +346,8 @@
           "simulation-capabilities",
           "file-components",
           "simulation-edit-view/simulation",
-          "platform-capabilities"
+          "platform-capabilities",
+          "project"
         ],
         "filePath": "@wixc3/home-screen/dist/feature/home-screen.feature",
         "envFilePaths": {
@@ -392,7 +390,7 @@
       {
         "contextFilePaths": {},
         "dependencies": [
-          "components-panel",
+          "home-screen",
           "project",
           "gui",
           "simulation-capabilities",
@@ -604,10 +602,9 @@
         "contextFilePaths": {},
         "dependencies": [
           "code-editor",
-          "component-tab",
-          "file-components",
           "gui",
           "project",
+          "project-ui",
           "symbol-schema-extract",
           "simulation-capabilities",
           "simulation-preview",
@@ -921,7 +918,6 @@
           "gui",
           "project",
           "project-ui",
-          "component-tab",
           "symbol-schema-extract"
         ],
         "filePath": "@wixc3/autodocs-feature/dist/feature/autodocs.feature",
@@ -931,8 +927,8 @@
         "preloadFilePaths": {},
         "exportedEnvs": [],
         "resolvedContexts": {
-          "processing": "worker",
-          "main": "window"
+          "main": "window",
+          "processing": "worker"
         },
         "packageName": "@wixc3/autodocs-feature",
         "scopedName": "autodocs"
@@ -1187,29 +1183,6 @@
       }
     ],
     [
-      "simulation-discovery",
-      {
-        "contextFilePaths": {},
-        "dependencies": [
-          "discovery",
-          "project",
-          "file-assets"
-        ],
-        "filePath": "@wixc3/simulation-discovery-feature/dist/feature/simulation-discovery.feature",
-        "envFilePaths": {
-          "processing": "@wixc3/simulation-discovery-feature/dist/feature/simulation-discovery.processing.env"
-        },
-        "preloadFilePaths": {},
-        "exportedEnvs": [],
-        "resolvedContexts": {
-          "main": "window",
-          "processing": "worker"
-        },
-        "packageName": "@wixc3/simulation-discovery-feature",
-        "scopedName": "simulation-discovery"
-      }
-    ],
-    [
       "demo-discovery",
       {
         "contextFilePaths": {},
@@ -1279,28 +1252,6 @@
         },
         "packageName": "@wixc3/typescript-assets-feature",
         "scopedName": "typescript-assets"
-      }
-    ],
-    [
-      "simulation-to-jsx",
-      {
-        "contextFilePaths": {},
-        "dependencies": [
-          "simple-ast",
-          "project"
-        ],
-        "filePath": "@wixc3/simulation-to-jsx-feature/dist/feature/simulation-to-jsx.feature",
-        "envFilePaths": {
-          "processing": "@wixc3/simulation-to-jsx-feature/dist/feature/simulation-to-jsx.processing.env"
-        },
-        "preloadFilePaths": {},
-        "exportedEnvs": [],
-        "resolvedContexts": {
-          "main": "window",
-          "processing": "worker"
-        },
-        "packageName": "@wixc3/simulation-to-jsx-feature",
-        "scopedName": "simulation-to-jsx"
       }
     ],
     [
@@ -1485,9 +1436,7 @@
           "simple-ast",
           "typescript",
           "typescript/typescript-compiler",
-          "simulation-discovery",
-          "file-assets",
-          "code-execution"
+          "file-assets"
         ],
         "filePath": "@wixc3/simulation-capabilities-feature/dist/feature/simulation-capabilities.feature",
         "envFilePaths": {
@@ -1638,32 +1587,6 @@
       }
     ],
     [
-      "component-tab",
-      {
-        "contextFilePaths": {},
-        "dependencies": [
-          "gui",
-          "file-components",
-          "project",
-          "symbol-schema-extract",
-          "project-ui",
-          "simulation-capabilities"
-        ],
-        "filePath": "@wixc3/component-tab-feature/dist/feature/component-tab.feature",
-        "envFilePaths": {
-          "main": "@wixc3/component-tab-feature/dist/feature/component-tab.main.env"
-        },
-        "preloadFilePaths": {},
-        "exportedEnvs": [],
-        "resolvedContexts": {
-          "processing": "worker",
-          "main": "window"
-        },
-        "packageName": "@wixc3/component-tab-feature",
-        "scopedName": "component-tab"
-      }
-    ],
-    [
       "code-languages",
       {
         "contextFilePaths": {},
@@ -1744,28 +1667,6 @@
       }
     ],
     [
-      "discovery",
-      {
-        "contextFilePaths": {},
-        "dependencies": [
-          "project",
-          "file-assets"
-        ],
-        "filePath": "@wixc3/discovery-feature/dist/feature/discovery.feature",
-        "envFilePaths": {
-          "processing": "@wixc3/discovery-feature/dist/feature/discovery.processing.env"
-        },
-        "preloadFilePaths": {},
-        "exportedEnvs": [],
-        "resolvedContexts": {
-          "main": "window",
-          "processing": "worker"
-        },
-        "packageName": "@wixc3/discovery-feature",
-        "scopedName": "discovery"
-      }
-    ],
-    [
       "git-commands",
       {
         "contextFilePaths": {
@@ -1787,6 +1688,28 @@
         },
         "packageName": "@wixc3/git-commands-feature",
         "scopedName": "git-commands"
+      }
+    ],
+    [
+      "discovery",
+      {
+        "contextFilePaths": {},
+        "dependencies": [
+          "project",
+          "file-assets"
+        ],
+        "filePath": "@wixc3/discovery-feature/dist/feature/discovery.feature",
+        "envFilePaths": {
+          "processing": "@wixc3/discovery-feature/dist/feature/discovery.processing.env"
+        },
+        "preloadFilePaths": {},
+        "exportedEnvs": [],
+        "resolvedContexts": {
+          "main": "window",
+          "processing": "worker"
+        },
+        "packageName": "@wixc3/discovery-feature",
+        "scopedName": "discovery"
       }
     ]
   ],
